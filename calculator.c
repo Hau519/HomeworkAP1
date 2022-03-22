@@ -74,8 +74,11 @@ int main(){
             while (num<2||num>20);
             result=addition(num);
             printf("\nThe results is %0.2f", result);
-            printf("\nWould you like to do another addition? (Y/N)");
-            scanf("%s",&ans); }
+            do {
+                printf("\nWould you like to do another addition? (Y/N)");
+                scanf("%s",&ans);}
+            while (ans!='Y'&&ans!='N');
+            }
         while (ans=='Y');
     }
         if (ans=='N') 
@@ -88,9 +91,12 @@ int main(){
         do{
             result=division();
             printf("The results is %0.2f\n", result);
-            printf("\nWould you like to do another division? (Y/N)");
-            scanf("%s",&ans);}
-        while (ans=='y');
+            do{
+                printf("\nWould you like to do another division? (Y/N)");
+                scanf("%s",&ans);}
+            while (ans!='Y'&&ans!='N');
+             }
+        while (ans=='Y');
     }
         if (ans=='N') 
             goto head;
@@ -103,9 +109,11 @@ int main(){
         scanf("%d", &num);
         result=multiplication(num);
         printf("\nThe results is %0.2f", result);
-        printf("\nWould you like to do another multiplication? (Y/N)");
-        scanf("%s",&ans);}
-        while (ans=='y');
+        do{
+            printf("\nWould you like to do another multiplication? (Y/N)");
+            scanf("%s",&ans);}
+        while (ans!='Y'&&ans!='N');}
+        while (ans=='Y');
     }
         if (ans=='N') 
             goto head;
@@ -116,9 +124,11 @@ int main(){
         do{
         result= subtraction();
         printf("\nThe results is %0.2f", result);
-        printf("\nWould you like to do another subtraction? (Y/N)");
-        scanf("%s",&ans);}
-        while (ans=='y');
+        do{
+            printf("\nWould you like to do another subtraction? (Y/N)");
+            scanf("%s",&ans);}
+        while (ans!='Y'&&ans!='N');}
+        while (ans=='Y');
     }
         if (ans=='N') 
             goto head;
