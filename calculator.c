@@ -75,8 +75,9 @@ int main(){
             result=addition(num);
             printf("\nThe results is %0.2f", result);
             do {
+                fflush(stdin);
                 printf("\nWould you like to do another addition? (Y/N)");
-                scanf("%s",&ans);}
+                scanf("%c",&ans);}
             while (ans!='Y'&&ans!='N');
             }
         while (ans=='Y');
