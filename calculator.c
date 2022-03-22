@@ -48,6 +48,7 @@ int main(){
     float result;
     int num;
     char ans;
+    head: 
     printf("\t\t\t    Numeric calculation\n");
     do{
         printf("\t\t\t Main menu operators choice\n");
@@ -60,6 +61,7 @@ int main(){
         printf("\nMake your choice (1-5): ");
         scanf("%d", &choice);}
     while (choice <1|| choice >5);
+
     switch (choice)
     {
     case 1: {
@@ -74,8 +76,10 @@ int main(){
             printf("\nThe results is %0.2f", result);
             printf("\nWould you like to do another addition? (Y/N)");
             scanf("%s",&ans); }
-        while (ans=='y');
+        while (ans=='Y');
     }
+        if (ans=='N') 
+            goto head;
         break;
     case 2: {
         
@@ -88,6 +92,8 @@ int main(){
             scanf("%s",&ans);}
         while (ans=='y');
     }
+        if (ans=='N') 
+            goto head;
         break;
     case 3: {
         printf("\t\t\t   MULTIPLICATION OPERATION\n");
@@ -101,6 +107,8 @@ int main(){
         scanf("%s",&ans);}
         while (ans=='y');
     }
+        if (ans=='N') 
+            goto head;
         break;
     case 4: {
         printf("\t\t\t   SUBTRACTION OPERATION\n");
@@ -112,6 +120,8 @@ int main(){
         scanf("%s",&ans);}
         while (ans=='y');
     }
+        if (ans=='N') 
+            goto head;
         break;
     default:
         break;
