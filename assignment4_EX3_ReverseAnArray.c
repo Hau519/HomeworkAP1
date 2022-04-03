@@ -34,26 +34,14 @@ if (count==0)
 else printf("The sequence of characters in both arrays is not the same\n");
 
 // d. Use part (c) to define a function called isPalindrome(), that takes 4 parameters (2 arrays and 2 sizes), and returns true if the word is a palindrome and false otherwise. 
-printf("Using function to see if the two array is palindrom\n");
+printf("Using function to see if the two array is palindrom: \n");
 isPalindrome(arrayA, arrayB, no_of_elements, no_of_elements);
 
 return 0;
 }
 
 void isPalindrome(char arrayA[], char arrayB[], int sizeA, int sizeB){
-/* printf("Please enter the number of element of 1st array: \n");
-scanf("%d", &sizeA);
-for(int i=0; i<sizeA; i++){
-    printf("Enter the %d value of the 1st Array please: \n");
-    scanf(" %c", &arrayA[i]);
-}
-printf("Please enter the number of element of 2nd array: \n");
-scanf("%d", &sizeB);
-for(int i=0; i<sizeB; i++){
-    printf("Enter the %d value of the 2nd Array please: \n");
-    scanf(" %c", &arrayB[i]);
-}
- */
+
 int count=0;
 if (sizeA!=sizeB)
     count=1;
