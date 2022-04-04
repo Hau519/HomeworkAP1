@@ -30,7 +30,7 @@ for (int i=0; i<10; i++){
         printf("index %d", i);
         count1++;
     }}
-if (count1=0)
+if (count1==0)
     printf("-1"); 
 return 0;
 }
